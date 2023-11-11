@@ -1,0 +1,265 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="CoddyLand – IT ma'lumot va maqolalar manzili. O'zbek tilidagi so'nggi yangiliklar, dasturlash, dizayn va boshqa IT sohalarida maqolalar. Muallif: Diyorbek Anorboyev.">
+    <meta name="keywords" content="IT, dasturlash, veb dizayn, ma'lumotlar texnologiyalari, yangiliklar, CoddyLand, Diyorbek Anorboyev">
+    <meta name="author" content="Diyorbek Anorboyev">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:title" content="CoddyLand – IT Ma'lumot va Maqolalar">
+    <meta property="og:description" content="O'zbek tilidagi so'nggi yangiliklar, dasturlash, dizayn va boshqa IT sohalarida maqolalar. Muallif: Diyorbek Anorboyev.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.coddyland.uz/">
+    <meta property="og:image" content="CoddyLand">
+    <meta property="og:site_name" content="https://uzbekdevs.uz/media/users/diyorbek-anorboev_uzbekdevs.jpg">
+    <title>CoddyLand || Bosh sahifa</title>
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}" type="image/x-icon">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <h1>CoddyLand</h1>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="{% url 'index' %}">Bosh sahifa</span></a></li>
+                    <li><a href="{% url 'article' %}">Maqolalar</a></li>
+                    <li><a href="{% url 'program' %}">Dasturlar</a></li>
+                    <li><a href="{% url 'about' %}">Biz haqimizda</a></li>
+                </ul>
+            </div><!-- end of /.navbar-collapse -->
+        </div><!-- end of /.container -->
+    </nav>
+    <main>
+        <div class="container">
+
+            <div class="row">
+
+                <!-- blog-contents -->
+                <section class="col-md-8">
+                    
+                    <div class="accordion-option">
+                        <h3 class="title">Dasturlash yo'nalishlari</h3>
+                        <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Vebdasturlash
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                aria-labelledby="headingOne">
+                                <div class="panel-body">
+
+                                    Veb-dasturlash veb-saytlar va veb-ilovalarni yaratishni o'z ichiga oladi. Front-end
+                                    ishlab chiqish HTML, CSS va JavaScript-dan foydalangan holda foydalanuvchi
+                                    interfeysiga qaratilgan. Back-end ishlab chiqish server tomonidagi jarayonlarni,
+                                    ma'lumotlar bazalarini va server texnologiyalarini boshqaradi. Ishlab chiquvchilar
+                                    vazifalarni soddalashtirish va xavfsizlikni ta'minlash uchun ramkalar, kutubxonalar
+                                    va API'lardan foydalanadilar. Responsive dizayn veb-saytlarning turli qurilmalarda
+                                    yaxshi ishlashini ta'minlaydi.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Mobil dasturlash
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
+                                aria-labelledby="headingTwo">
+                                <div class="panel-body">
+
+                                    Mobil dasturlash iOS (Swift yoki Objective-C yordamida) va Android (Java yoki Kotlin
+                                    yordamida) kabi platformalarda smartfon va planshetlar uchun ilovalar yaratadi.
+                                    Ishlab chiquvchilar foydalanuvchi interfeyslarini loyihalashtiradilar, React Native
+                                    kabi ramkalardan foydalanadilar va API orqali qurilma xususiyatlari bilan o'zaro
+                                    ishlaydilar. Ilovalar ilovalar do'konlari orqali tarqatiladi va doimiy texnik xizmat
+                                    ko'rsatish eng yangi qurilmalar va operatsion tizimlar bilan ishlash va moslik uchun
+                                    juda muhimdir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        O'yinlar yaratish
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel"
+                                aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    O'yin dasturlash Unity yoki Unreal Engine kabi vositalar yordamida interaktiv video
+                                    o'yinlarni yaratadi. Ishlab chiquvchilar o‘yin, grafik va tovushni loyihalashtiradi,
+                                    C# yoki C++ kabi tillarda kod yozadi, fizika va simulyatsiyalarni birlashtiradi.
+                                    Ular, shuningdek, onlayn o'yinlar uchun test, disk raskadrovka va ko'p o'yinchi
+                                    xususiyatlarini amalga oshirish bilan shug'ullanadi.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% for i in article %}
+                    <article class="blog-item">
+                       
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="{{ i.img.url }}" class="img-thumbnail center-block" alt="html">
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <p>
+                                    <time>{{ i.data }}<time>
+                                </p>
+                                <h1>
+                                    <a href="{% url 'blog' i.id %}">{{ i.name }}</a>
+                                </h1>
+                            </div>
+                        </div>
+                    </article> <!-- /.blog-item -->
+                    {% endfor %}                    
+
+                </section>
+                <!-- end of blog-contents -->
+
+                <!-- sidebar -->
+                <aside class="col-md-4 col-sm-8 col-xs-8">
+                    <div class="sidebar">
+
+                        <!-- search option -->
+                        <div class="search-widget">
+                            <div class="input-group margin-bottom-sm">
+                                <input class="form-control" type="text" placeholder="Search here">
+                                <a href="#" class="input-group-addon">
+                                    <i class="fa fa-search fa-fw"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- subscribe form -->
+                        <div class="subscribe-widget">
+                            <h4 class="text-capitalize text-center">
+                                get recent update by email
+                            </h4>
+                            <div class="input-group margin-bottom-sm">
+                                <input class="form-control" type="text" placeholder="Your Email">
+                                <a href="#" class="input-group-addon">
+                                    <i class="fa fa-paper-plane fa-fw"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- sidebar share button -->
+                        <div class="share-widget hidden-xs hidden-sm">
+                            <ul class="social-share text-center">
+                                <li><a href="https://twitter.com/no_insoff"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100086462827350"><i
+                                            class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://telegram.me/anorboyev_web"><i class="fa fa-plane"></i></a></li>
+                                <li><a href="https://instagram.com/diyorbek_anorboev"><i
+                                            class="fa fa-instagram"></i></a></li>
+                            </ul> <!-- /.sidebar-share-button -->
+                        </div> <!-- /.share-widget -->
+
+                    </div>
+                </aside>
+                <!-- end of sidebar -->
+
+            </div>
+        </div> <!-- end of /.container -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- copyright -->
+                <div class="col-md-4 col-sm-4">
+                    copyright &copy; 2023
+                    <br>
+                    Creaated by : Diyorbek Anorboev
+                </div>
+
+                <!-- footer share button -->
+                <div class="col-md-4 col-sm-4">
+                    <ul class="social-share text-center">
+                        <li><a href="https://twitter.com/no_insoff"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100086462827350"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://telegram.me/anorboyev_web"><i class="fa fa-plane"></i></a></li>
+                        <li><a href="https://instagram.com/diyorbek_anorboev"><i class="fa fa-instagram"></i></a></li>
+                    </ul> <!-- /.social-share -->
+                </div>
+
+                <!-- footer-nav -->
+                <div class="col-md-4 col-sm-4">
+                    <ul class="footer-nav">
+                        <li><a href="{% url 'about' %}'">About</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul> <!-- /.footer-nav -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Necessary scripts  -->
+
+    <script type="text/javascript" src="{% static 'assets/js/jquery-2.1.3.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/jQuery.scrollSpeed.js' %}"></script>
+
+    <!-- smooth-scroll -->
+
+    <script>
+        $(function () {
+            jQuery.scrollSpeed(100, 1000);
+        });
+    </script>
+
+</body>
+
+</html>
